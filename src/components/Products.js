@@ -10,7 +10,9 @@ export default class Products extends Component {
     products: []
   }
 
-  fetchProducts = async () => {
+  fetchProducts = async ('https://tbql2sdxfb.execute-api.us-east-1.amazonaws.com/Dev/hexalinput'); => {
+    const body = await response.json();
+    this.setState({Products : updatedProdcuts})
     // add call to AWS API Gateway to fetch products here
     // then set them in state
     try {
